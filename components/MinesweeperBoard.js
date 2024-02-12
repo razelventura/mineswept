@@ -12,7 +12,7 @@ const MinesweeperBoard = ({ gridSize, mineCount, onGameOver, startTimer, updateS
     const [grid, setGrid] = useState([]);
 
     // Calculate cell size based on screen width and gridSize
-    const screenWidth = Dimensions.get('window').width;
+    const screenWidth = Dimensions.get('window').width*0.7;
     const cellSize = (screenWidth - 4 * gridSize) / gridSize; // Grid fills the screen width
 
     const toggleFlag = (index) => {
